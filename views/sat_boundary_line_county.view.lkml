@@ -86,6 +86,7 @@ view: sat_boundary_line_county {
 
   dimension: name {
     type: string
+    map_layer_name: counties
     sql: ${TABLE}."NAME" ;;
   }
 
