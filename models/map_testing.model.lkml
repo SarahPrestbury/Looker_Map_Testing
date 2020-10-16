@@ -16,5 +16,5 @@ explore: sat_boundary_line_county {
   }
 
 map_layer: counties {
-  url: "https://raw.githubusercontent.com/SarahPrestbury/Looker_Map_Testing/master/counties.json?token=AKQ6PSEE2GZZ7QY3GNT5GWK7RBNHG"
+  url: "https://raw.githubusercontent.com/SarahPrestbury/Looker_Map_Testing/master/county.json?token=AKQ6PSDNCJEZ2FEHS2Z3PQ27RGA42"
 }
