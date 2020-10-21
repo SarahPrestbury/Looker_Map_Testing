@@ -97,8 +97,8 @@ view: sat_boundary_line_county {
     drill_fields: [name, file_name]
   }
 
-  #measure: sum_hectares {
-  #  type: sum
-  #  sql: ${hectares} ;;
-  #}
+  measure: sum_hectares {
+    type: sum
+    sql: ${hectares} ;;
+  }
 }
