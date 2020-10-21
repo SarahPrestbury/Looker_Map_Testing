@@ -19,7 +19,7 @@ explore: sat_boundary_line_county {
     sql_on: ${sat_boundary_line_county.county_key} = ${map_counties.county_key} ;;
   }
   }
-#explore: sat_boundary_line_county{}
+
 
 
 map_layer: counties_boundary {
