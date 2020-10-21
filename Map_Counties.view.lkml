@@ -8,7 +8,7 @@ derived_table: {
 
 dimension: county_key {
   sql: ${TABLE}.COUNTY_KEY ;;
-  primary_key: yes
+  #primary_key: yes
 }
 
 dimension: county_name {
