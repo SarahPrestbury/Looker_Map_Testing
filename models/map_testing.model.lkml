@@ -23,6 +23,6 @@ explore: sat_boundary_line_county {
 
 map_layer: counties_boundary {
   url: "https://cm-jjohnson-general.s3-eu-west-1.amazonaws.com/county3.json"
-  #property_key: "NAME"
+  property_key: "NAME"
   feature_key: "NAME"
 }
