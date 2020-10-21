@@ -3,7 +3,7 @@ view: map_counties {
 derived_table: {
   sql:
    SELECT COUNTY_KEY, NAME
-   FROM RAW.SAT_BOUNDARY_LINE_COUNTY;;
+   FROM DEV_CM_DATASHARE_JACK_VAULT.RAW.SAT_BOUNDARY_LINE_COUNTY;;
   }
 
 dimension: county_key {
