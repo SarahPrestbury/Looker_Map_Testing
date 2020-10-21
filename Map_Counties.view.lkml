@@ -2,7 +2,7 @@ view: map_counties {
 
 derived_table: {
   sql:
-   SELECT COUNTY_KEY, SPLIT_PART(NAME,' County', 0) AS COUNTY_NAME
+   SELECT COUNTY_KEY, NAME
    FROM RAW.SAT_BOUNDARY_LINE_COUNTY;;
   }
 
@@ -12,7 +12,7 @@ dimension: county_key {
 }
 
 dimension: county_name {
-  sql: ${TABLE}.COUNTY_NAME ;;
+  sql: ${TABLE}.NAME ;;
   map_layer_name: counties_boundary
   }
 

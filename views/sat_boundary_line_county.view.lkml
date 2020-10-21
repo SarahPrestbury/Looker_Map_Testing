@@ -1,5 +1,5 @@
 view: sat_boundary_line_county {
-  sql_table_name: "RAW"."SAT_BOUNDARY_LINE_COUNTY"
+  sql_table_name: "DEV_CM_DATASHARE_JACK_VAULT"."RAW"."SAT_BOUNDARY_LINE_COUNTY"
     ;;
 
   dimension: admin_unit_id {
