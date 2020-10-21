@@ -92,13 +92,13 @@ view: sat_boundary_line_county {
     map_layer_name: counties_boundary
   }
 
-  #measure: count {
-  #  type: count
-  #  drill_fields: [name, file_name]
-  #}
-
-  measure: sum_hectares {
-    type: sum
-    sql: ${hectares} ;;
+  measure: count {
+    type: count
+    drill_fields: [name, file_name]
   }
+
+  #measure: sum_hectares {
+  #  type: sum
+  #  sql: ${hectares} ;;
+  #}
 }
