@@ -9,7 +9,7 @@ view: sat_boundary_line_county {
 
   dimension: county_key {
     type: string
-    primary_key: yes
+    #primary_key: yes
     sql: ${TABLE}."COUNTY_KEY" ;;
   }
 
