@@ -27,4 +27,5 @@ label: "sat_boundary_line_county"
 map_layer: counties_boundary {
   url: "http://cm-jjohnson-general.s3-website-eu-west-1.amazonaws.com/uk-counties.json"
   format: topojson
+  property_key: "NAME_2"
   }
