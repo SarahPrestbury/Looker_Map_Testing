@@ -2,7 +2,7 @@ view: map_counties {
 
 derived_table: {
   sql:
-   SELECT COUNTY_KEY, NAME
+   SELECT COUNTY_KEY, SPLIT_PART(NAME,' County', 0) AS NAME
    FROM DEV_CM_DATASHARE_JACK_VAULT.RAW.SAT_BOUNDARY_LINE_COUNTY;;
   }
 
