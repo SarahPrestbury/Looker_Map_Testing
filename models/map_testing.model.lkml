@@ -32,7 +32,7 @@ explore: sat_boundary_line_district_borough_unitary {
 map_layer: unitary_authorities {
   url: "https://raw.githubusercontent.com/jackjohnson-jj10/TopoJSONDemo/main/district_borough_unitary_edit.json"
   format:  topojson
-  property_key: "name"
+  property_key: "NAME_2"
 }
 
 
