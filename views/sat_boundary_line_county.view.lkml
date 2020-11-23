@@ -4,7 +4,7 @@ view: sat_boundary_line_county {
   derived_table: {
     sql:
        SELECT *
-       FROM DEV_CM_DATASHARE_JACK_VAULT.RAW.SAT_BOUNDARY_LINE_COUNTY;;
+       FROM DEV_CM_DATASHARE_JACK_VAULT.DEV_CM_DATASHARE_JACK_VAULT.RAW.SAT_BOUNDARY_LINE_DISTRICT_BOROUGH_UNITARY;;
   }
 
   dimension: admin_unit_id {
@@ -12,10 +12,10 @@ view: sat_boundary_line_county {
     sql: ${TABLE}."ADMIN_UNIT_ID" ;;
   }
 
-  dimension: county_key {
+  dimension: district_borough_unitary_key {
     type: string
-    #primary_key: yes
-    sql: ${TABLE}."COUNTY_KEY" ;;
+    primary_key: yes
+    sql: ${TABLE}."DISTRICT_BOROUGH_UNITARY_KEY" ;;
   }
 
   dimension_group: effective_from_ts {
@@ -94,7 +94,7 @@ view: sat_boundary_line_county {
   dimension: name {
     type: string
     sql: ${TABLE}."NAME" ;;
-    map_layer_name: counties_boundary
+    map_layer_name: district_borough_unitary
   }
 
   measure: count {

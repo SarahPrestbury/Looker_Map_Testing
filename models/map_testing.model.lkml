@@ -23,8 +23,7 @@ include: "/views/**/*.view"
 explore: sat_boundary_line_county {}
 
 
-map_layer: counties_boundary {
-  url: "https://cm-jjohnson-general.s3-eu-west-1.amazonaws.com/county4.json"
-  property_key: "NAME"
-  feature_key: "NAME"
+map_layer: district_borough_unitary {
+  file: "/district_borough_unitary_limited_topo.json"
+  property_key: "name"
 }
