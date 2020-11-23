@@ -93,7 +93,7 @@ view: sat_boundary_line_county {
   dimension: name {
     type: string
     sql: ${TABLE}."NAME" ;;
-    map_layer_name: counties_boundary
+    #map_layer_name: counties_boundary
   }
 
   measure: count {
