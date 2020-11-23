@@ -30,14 +30,14 @@ explore: sat_boundary_line_district_borough_unitary {
 
 
 map_layer: unitary_authorities {
-  file: "/district_borough_unitary_limited_topo.json"
+  url: "https://raw.githubusercontent.com/jackjohnson-jj10/TopoJSONDemo/main/district_borough_unitary_edit.json"
   format:  topojson
   property_key: "name"
 }
 
 
-map_layer: counties_boundary {
- url: "https://raw.githubusercontent.com/brechtv/looker_map_layers/master/uk-counties.json"
-  format: topojson
-  property_key: "NAME_2"
-}
+#map_layer: counties_boundary {
+ #url: "https://raw.githubusercontent.com/brechtv/looker_map_layers/master/uk-counties.json"
+  #format: topojson
+  #property_key: "NAME_2"
+#}
