@@ -21,10 +21,10 @@ label: "sat_boundary_line_county"
 
 
 
-explore: sat_boundary_line_district_borough_unitary {
-  label: "sat_boundary_line_district_borough_unitary"
-  view_name: sat_boundary_line_district_borough_unitary
-  }
+#explore: sat_boundary_line_district_borough_unitary {
+#  label: "sat_boundary_line_district_borough_unitary"
+#  view_name: sat_boundary_line_district_borough_unitary
+#  }
 
 
 #map_layer: unitary_authorities {
