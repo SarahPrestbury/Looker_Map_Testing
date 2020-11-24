@@ -4,7 +4,8 @@ view: sat_boundary_line_district_borough_unitary {
   derived_table: {
     sql:
        SELECT *
-       FROM DEV_CM_DATASHARE_JACK_VAULT.RAW.SAT_BOUNDARY_LINE_DISTRICT_BOROUGH_UNITARY;; }
+       FROM DEV_CM_DATASHARE_JACK_VAULT.RAW.SAT_BOUNDARY_LINE_DISTRICT_BOROUGH_UNITARY
+      WHERE NAME LIKE '%Darlington%' OR NAME LIKE '%Redcar%' OR NAME LIKE '%Hartlepool%' OR NAME LIKE '%Stockton%' OR NAME LIKE '%Middles%';; }
 
   dimension: admin_unit_id {
     type: string
