@@ -1,21 +1,16 @@
-view: sat_boundary_line_county {
-
-  sql_table_name: "DEV_CM_DATASHARE_JACK_VAULT"."RAW"."SAT_BOUNDARY_LINE_COUNTY" ;;
-
-  # derived_table: {
-   # sql:
-      # SELECT *
-      # FROM DEV_CM_DATASHARE_JACK_VAULT.RAW.SAT_BOUNDARY_LINE_COUNTY;; }
+view: sat_boundary_line_district_borough_unitary {
+  sql_table_name: "RAW"."SAT_BOUNDARY_LINE_DISTRICT_BOROUGH_UNITARY"
+    ;;
 
   dimension: admin_unit_id {
     type: string
     sql: ${TABLE}."ADMIN_UNIT_ID" ;;
   }
 
-  dimension: county_key {
+  dimension: district_borough_unitary_key {
     type: string
+    sql: ${TABLE}."DISTRICT_BOROUGH_UNITARY_KEY" ;;
     primary_key: yes
-    sql: ${TABLE}."COUNTY_KEY" ;;
   }
 
   dimension_group: effective_from_ts {
@@ -69,7 +64,6 @@ view: sat_boundary_line_county {
   dimension: hectares {
     type: string
     sql: ${TABLE}."HECTARES" ;;
-
   }
 
   dimension: load_src {
@@ -94,17 +88,11 @@ view: sat_boundary_line_county {
   dimension: name {
     type: string
     sql: ${TABLE}."NAME" ;;
-    map_layer_name: counties_boundary
+    map_layer_name: unitary_authorities
   }
 
   measure: count {
     type: count
-    drill_fields: [name, file_name]
+    drill_fields: [file_name, name]
   }
-
-  measure: sum_hectares {
-    type: sum
-    sql: ${hectares} ;;
-  }
-
-  }
+}
