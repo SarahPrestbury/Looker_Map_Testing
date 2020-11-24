@@ -91,8 +91,8 @@ view: sat_boundary_line_district_borough_unitary {
     map_layer_name: unitary_authorities
   }
 
-  measure: count {
-    type: count
-    drill_fields: [file_name, name]
+ measure: count {
+   type: count
+  drill_fields: [file_name, name]
   }
 }

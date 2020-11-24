@@ -13,7 +13,7 @@ dimension: county_key {
 
 dimension: county_name {
   sql: ${TABLE}.NAME ;;
-  map_layer_name: counties_boundary
+ # map_layer_name: counties_boundary
   }
 
 }
