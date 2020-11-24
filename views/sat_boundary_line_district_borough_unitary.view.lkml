@@ -1,6 +1,10 @@
 view: sat_boundary_line_district_borough_unitary {
-  sql_table_name: "RAW"."SAT_BOUNDARY_LINE_DISTRICT_BOROUGH_UNITARY"
-    ;;
+  #sql_table_name: "RAW"."SAT_BOUNDARY_LINE_DISTRICT_BOROUGH_UNITARY"
+   # ;;
+  derived_table: {
+    sql:
+       SELECT *
+       FROM DEV_CM_DATASHARE_JACK_VAULT.RAW.SAT_BOUNDARY_LINE_DISTRICT_BOROUGH_UNITARY;; }
 
   dimension: admin_unit_id {
     type: string
