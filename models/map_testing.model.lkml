@@ -9,6 +9,7 @@ persist_with: map_testing_default_datagroup
 
 include: "/views/**/*.view"
 include: "/Map_Counties.view"
+include: "/map_district_unitary.view"
 
 #explore: sat_boundary_line_county {
 #label: "sat_boundary_line_county"
@@ -24,6 +25,10 @@ include: "/Map_Counties.view"
 explore: sat_boundary_line_district_borough_unitary {
   label: "sat_boundary_line_district_borough_unitary"
   view_name: sat_boundary_line_district_borough_unitary
+  join: map_district_unitary {
+    relationship: one_to_one
+    sql_on:  ${sat_boundary_line_district_borough_unitary.district_borough_unitary_key} = ${map_district_unitary.district_borough_unitary_key} ;;
+  }
   }
 
 
