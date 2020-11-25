@@ -7,7 +7,7 @@ view: map_district_unitary {
 
     dimension: district_borough_unitary_key {
       sql: ${TABLE}.DISTRICT_BOROUGH_UNITARY_KEY ;;
-      #primary_key: yes
+      primary_key: yes
     }
 
     dimension: county_name {
