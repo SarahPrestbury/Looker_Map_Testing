@@ -16,6 +16,7 @@ view: sat_boundary_line_district_borough_unitary_ward {
         type: string
         sql: ${TABLE}."DISTRICT_BOROUGH_UNITARY_WARD_KEY" ;;
         primary_key: yes
+        map_layer_name: unitary_authorities_wards
       }
 
       #dimension_group: effective_from_ts {
@@ -93,7 +94,7 @@ view: sat_boundary_line_district_borough_unitary_ward {
       dimension: name {
         type: string
         sql: ${TABLE}."NAME" ;;
-        map_layer_name: unitary_authorities_wards
+        #map_layer_name: unitary_authorities_wards
       }
 
       measure: count {
