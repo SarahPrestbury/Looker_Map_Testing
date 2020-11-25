@@ -46,3 +46,19 @@ map_layer: unitary_authorities {
 #  format: topojson
 #  property_key: "NAME_2"
 #}
+
+
+
+explore: sat_boundary_line_district_borough_unitary_ward {
+  label: "sat_boundary_line_district_borough_unitary_ward"
+  view_name: sat_boundary_line_district_borough_unitary_ward
+}
+
+
+map_layer: unitary_authorities_wards {
+  #url: "https://raw.githubusercontent.com/jackjohnson-jj10/TopoJSONDemo/main/district_borough_unitary_topo.json"
+  url: "https://raw.githubusercontent.com/jackjohnson-jj10/TopoJSONDemo/main/district_borough_unitary_ward_topo_demo.json"
+  #file: "/Maps/district_borough_unitary_limited_topo.json"
+  format:  topojson
+  property_key: "name"
+}
