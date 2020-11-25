@@ -34,7 +34,7 @@ explore: sat_boundary_line_district_borough_unitary {
 
 map_layer: unitary_authorities {
   #url: "https://raw.githubusercontent.com/jackjohnson-jj10/TopoJSONDemo/main/district_borough_unitary_topo.json"
-  url: "http://cm-jjohnson-general.com.s3-website.eu-central-1.amazonaws.com/district_borough_unitary_topo.json"
+  url: "https://raw.githubusercontent.com/jackjohnson-jj10/TopoJSONDemo/main/district_borough_unitary_ward_topo_demo.json"
   #file: "/Maps/district_borough_unitary_limited_topo.json"
   format:  topojson
   property_key: "name"
