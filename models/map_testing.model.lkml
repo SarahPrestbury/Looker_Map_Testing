@@ -22,23 +22,23 @@ include: "/map_district_unitary.view"
 
 
 
-explore: sat_boundary_line_district_borough_unitary {
-  label: "sat_boundary_line_district_borough_unitary"
-  view_name: sat_boundary_line_district_borough_unitary
-  join: map_district_unitary {
-    relationship: one_to_one
-    sql_on:  ${sat_boundary_line_district_borough_unitary.district_borough_unitary_key} = ${map_district_unitary.district_borough_unitary_key} ;;
-  }
-  }
+# explore: sat_boundary_line_district_borough_unitary {
+#   label: "sat_boundary_line_district_borough_unitary"
+#   view_name: sat_boundary_line_district_borough_unitary
+#   join: map_district_unitary {
+#     relationship: one_to_one
+#     sql_on:  ${sat_boundary_line_district_borough_unitary.district_borough_unitary_key} = ${map_district_unitary.district_borough_unitary_key} ;;
+#   }
+#   }
 
 
-map_layer: unitary_authorities {
-  #url: "https://raw.githubusercontent.com/jackjohnson-jj10/TopoJSONDemo/main/district_borough_unitary_topo.json"
-  url: "https://raw.githubusercontent.com/jackjohnson-jj10/TopoJSONDemo/main/district_borough_unitary_ward_topo_demo.json"
-  #file: "/Maps/district_borough_unitary_limited_topo.json"
-  format:  topojson
-  property_key: "name"
-}
+# map_layer: unitary_authorities {
+#   #url: "https://raw.githubusercontent.com/jackjohnson-jj10/TopoJSONDemo/main/district_borough_unitary_topo.json"
+#   url: "https://raw.githubusercontent.com/jackjohnson-jj10/TopoJSONDemo/main/district_borough_unitary_ward_topo_demo.json"
+#   #file: "/Maps/district_borough_unitary_limited_topo.json"
+#   format:  topojson
+#   property_key: "name"
+# }
 
 
 #map_layer: counties_boundary {

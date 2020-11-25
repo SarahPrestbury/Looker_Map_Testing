@@ -93,7 +93,7 @@ view: sat_boundary_line_district_borough_unitary {
   dimension: name {
     type: string
     sql: ${TABLE}."NAME" ;;
-    map_layer_name: unitary_authorities
+    #map_layer_name: unitary_authorities
   }
 
   measure: count {
